@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>NITC Student Hub</title>
+        <style>
+            #sidebar {
+            height: 100vh;
+            width: 10vw;
+            background-color: #D9D9D9;
+            display: inline-block;
+            float: left;
+            }
+
+            #MP, #LnF, #header a{
+                text-decoration: none;
+                color: blue;
+            }
+            
+            #header {
+            float: right;
+            display: inline-block;
+            height: 10vh;
+            width: 88.3vw;
+            background-color: #B7D4E9;
+            text-align: center;
+            line-height: 10vh;
+            }
+
+            #header span {
+            float: left;
+            margin-left: 2vw;
+            font-size: 2vw;
+            font-weight: bold;
+            color: white;
+            }
+
+            #main {
+            display: inline-block;
+            float: right;
+            height: 88vh;
+            width: 88.3vw;
+            }
+
+            #post-content {
+            margin: 4vh auto;
+            width: 85vw;
+            height: 70vh;
+            background-color: #D9D9D9;
+            padding: 2vh;
+            border-radius: 3vh;
+            }
+
+            #post-content span{
+              font-size: 2vw;
+            }
+            #post-content a{
+              text-decoration: none;
+              color: blue;
+              margin-left: 2 vw;
+              font-size: 1.5vw;
+            }
+
+            img {
+            height:40vh;
+            width: 85vw;
+            }
+
+            button {
+            position: fixed;
+            left: 50vw;
+            width: 6vw;
+            height: 2vw;
+            font-size: 1vw;
+            border-radius: 1.5vw;
+            background-color: #B7D4E9;
+            }
+
+            ul {
+            padding-left:1.5vw;
+            }
+            li {
+            margin: 0.4vw;
+            }
+            h3 {
+            margin: 0px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id = "sidebar">
+            <ul id = "nav-contents">
+              <li>
+                <ul>
+                  <li>Photo</li>
+                  <li>Name</li>
+                  <li>Email</li>
+                </ul>
+              </li>
+              <li> <a href = "LostandFound.html" id = "LnF">Lost and Found</a> </li>
+              <li> <a href = "Marketplace.html" id = "MP">Marketplace</a> </li>
+            </ul>
+          </div>
+          <div id = "header">
+            <span>Lost and Found</span>
+            <a href = "LostandFound.html"> Home </a> |
+            <a href = "#"> Personal </a> |
+            <a href = "#"> Notifications </a>
+          </div>
+          <div id = "main">
+            <div id = "post-content">
+              author
+              <br>
+              <span>Title - Type</span>
+              <a href = "#"> #category </a>
+              <br>
+              <img src = "default.png" alt = "default image"/>
+              <br><br>
+              <b>Details</b>
+              <br><br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada, mi id consequat bibendum, 
+              nisi metus faucibus leo, non bibendum lectus metus at lorem. Etiam aliquam lectus eu eros dapibus, a tincidunt 
+              sapien commodo. Aenean hendrerit erat quis elit volutpat congue. Ut erat erat, eleifend a tincidunt vel, vehicula 
+              ut lorem. Etiam id nisl non purus ultricies luctus. In condimentum lorem nec nulla ultricies tristique. Aenean 
+              elementum nisi lorem, nec auctor odio tempor id. Aliquam erat volutpat. Sed enim ex, lobortis sed rutrum non, accumsan
+              quis est. Quisque ligula augue, bibendum non blandit quis, dignissim in velit. Pellentesque porttitor scelerisque arcu, 
+              a ornare diam euismod a. Aenean id suscipit nisi, et malesuada nulla. Phasellus turpis magna, bibendum a neque id, 
+              feugiat viverra urna. Donec vel porttitor augue.
+              <br>
+              <br>
+              Location:
+              <br>
+              Time:
+            </div>
+          <button type="button">Delete</button>
+          </div>
+    </body>
+</html>
