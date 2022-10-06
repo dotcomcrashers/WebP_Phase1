@@ -42,23 +42,38 @@
             width: 88.3vw;
             }
 
-            div.posts {
+            #form {
             margin: 4vh auto;
             width: 85vw;
-            height: 10vh;
+            height: 70vh;
             background-color: #D9D9D9;
             padding: 2vh;
             border-radius: 3vh;
             }
 
-            img {
-            height: 10vh;
-            margin-right: 0.5vw;
+            #post-content span{
+              font-size: 2vw;
+            }
+            #post-content a{
+              text-decoration: none;
+              color: blue;
+              margin-left: 2 vw;
+              font-size: 1.5vw;
             }
 
-            a.posts{
-            text-decoration: none;
-            color: black;
+            img {
+            height:40vh;
+            width: 85vw;
+            }
+
+            button {
+            position: fixed;
+            left: 50vw;
+            width: 6vw;
+            height: 2vw;
+            font-size: 1vw;
+            border-radius: 1.5vw;
+            background-color: #B7D4E9;
             }
 
             ul {
@@ -69,18 +84,6 @@
             }
             h3 {
             margin: 0px;
-            }
-
-            button {
-            position: fixed;
-            bottom: 4vh;
-            right: 2vw;
-            width: 3vw;
-            height: 3vw;
-            font-size: 2vw;
-            border-radius: 1.5vw;
-            text-align: center;
-            background-color: #B7D4E9;
             }
         </style>
     </head>
@@ -106,31 +109,38 @@
             <a href = "#"> Notifications </a>
           </div>
           <div id = "main">
-            <a href = "LostandFoundDetails.html" class = "posts">
-              <div class = "posts">
-                <img alt = "default image" align = "left" src = "default.png"/>
-                author<br>
-                <h3>Title</h3>
-                Description
-              </div>
-            </a>
-            <a href = "LostandFoundDetails.html" class = "posts"> 
-              <div class = "posts">
-                <img alt = "default image" align = "left" src = "default.png"/>
-                author<br>
-                <h3>Title</h3>
-                Description
-              </div>
-            </a>
-            <a href = "LostandFoundDelete.html" class = "posts">
-              <div class = "posts">
-                <img alt = "default image" align = "left" src = "default.png"/>
-                author<br>
-                <h3>Title</h3>
-                Description
-              </div>
-            </a>
-            <a id = "create" href="CreateLostandFound.html"><button type="button">+</button></a>
+            <div id = "form">
+                <h2>Create lost and found entry</h2>
+                <form >
+                    <label>Title:
+                        <input type = "text" id = "title" name="title">
+                    </label><br>
+                    <label>Attach an image of the item:
+                        <input type="file" id="img" name="img" accept="image/*">
+                    </label><br>
+                    <label>Choose type:
+                        <select id = "type" name="type">
+                            <option value = "lost">Lost an item</option>
+                            <option value="found">Found an unknown item</option>
+                        </select>
+                    </label><br>
+                    <label>Choose category:
+                        <select id = "category" name="category">
+                        </select>
+                    </label><br>
+                    <label>Description:
+                        <textarea id="description" name="description" rows="10" cols="100"></textarea>
+                    </label><br>
+                    <label>Location:
+                        <input type="text" id = "location" name="location">
+                    </label><br>
+                    <label>Time:
+                        <input type="datetime" id = "time" name="time">
+                    </label><br>
+                    <br>
+                    <input type="submit">
+                </form>
+            </div>
           </div>
     </body>
 </html>
